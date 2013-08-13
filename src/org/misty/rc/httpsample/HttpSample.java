@@ -39,6 +39,13 @@ public class HttpSample {
         Request request = new Request(RequestMethod.GET);
     }
 
+    private static void testGet2() throws Exception {
+        String apibase = "https://qiita.com/api/v1";
+        URL url = new URL(apibase);
+        HttpsURLConnection https = (HttpsURLConnection) url.openConnection();
+
+    }
+
     private static void testGet() throws IOException {
         URL url = new URL("https://qiita.com/api/v1/auth");
         HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
